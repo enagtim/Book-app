@@ -3,12 +3,33 @@
   "version": "1.0.0",
   "description": "cool book app",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c --watch",
+    "start": "live-server"
   },
   "keywords": [
     "books"
   ],
   "author": "Nikita Kaberov",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/enagtim/Book-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enagtim/Book-app/issues"
+  },
+  "homepage": "https://github.com/enagtim/Book-app#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "rollup": "^4.21.2",
+    "rollup-plugin-import-css": "^3.5.1"
+  },
+  "dependencies": {
+    "on-change": "^5.0.1"
+  }
 }
